@@ -8,12 +8,13 @@ class Main {
 
     
     /* Example usage for InputHelper */
-    // Scanner sc = new Scanner(System.in);
-    // InputHelper ih = new InputHelper(sc);
-    // boolean yesNo = ih.getYesNoInput("please answer yes or no.");
-    // System.out.println("the player chose " + yesNo);
-    // int numberChosen = ih.getIntegerInput("please chose a number between 10 and 12 (inclusive).", 10, 12);
-    // System.out.println("the player chose " + numberChosen);
-
+    //Scanner sc = new Scanner(System.in);
+    //InputHelper ih = new InputHelper(sc);
+    //boolean yesNo = ih.getYesNoInput("please answer yes or no.");
+    //System.out.println("the player chose " + yesNo);
+    
+    //int numberChosen = ih.getIntegerInput("please chose a number between 10 and 12 (inclusive).", 10, 12);
+    //System.out.println("the player chose " + numberChosen);
+   
   }
 }
