@@ -57,11 +57,12 @@ public class MyMath {
 	}
 
 	/**
-	 *
+	 * perfectSqrt
 	 * @param x
 	 * @return
 	 */
 	public static int perfectSqrt(int x) {
+		// if 0  return 0
 		if(x == 0){
 			return 0;
 		}
@@ -71,6 +72,7 @@ public class MyMath {
 			sqr = x/2;
 		}
 		while (y < sqr){
+			// if x/y is int
 			if(x%y == 0){
 				if (x / y == y) {
 					return y;

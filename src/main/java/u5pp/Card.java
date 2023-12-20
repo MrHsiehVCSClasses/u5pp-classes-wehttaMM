@@ -27,7 +27,7 @@ public class Card {
 	}
 
 	/**
-	 *
+	 *Card
 	 * @param suit
 	 * @param value
 	 */
@@ -97,6 +97,7 @@ public class Card {
 	public void changeSuit(String suit) {
 		String checkSuit="";
 		checkSuit = suit.toLowerCase();
+		// checkSuit is clubs or diamonds
 		if ((checkSuit.equals("clubs")) || (checkSuit.equals("diamonds")) 
 				|| (checkSuit.equals("hearts")) || (checkSuit.equals("spades"))) {
 			this.suit = checkSuit;

@@ -12,14 +12,17 @@ public class InputHelper {
     }
 
     /**
+     * getYesNoInput
      * @param prompt
-     * @return
+     * @return bool
      */
     public boolean getYesNoInput(String prompt) {
         System.out.println(prompt);
         boolean hasY = false;
+        //if next
         while (this.input.hasNext()) {
             String s = this.input.nextLine();
+            //if "y" or "yes" return true
             if ("y".equals(s.toLowerCase())||"yes".equals(s.toLowerCase())) {
                 hasY = true;
             }
@@ -39,6 +42,7 @@ public class InputHelper {
         System.out.println(prompt);
         boolean hasSeven = false;
         boolean hasNine = false;
+        // if next
         while (this.input.hasNext()) {
             String s = this.input.nextLine();
             if ("7".equals(s)) {
