@@ -78,7 +78,7 @@ public class Dice {
 	 * @return String
 	 */
 	public String toString() {
-		return "The " + color + " " + "6-sided dice is showing " + getCurrentSide();
+		return "The " + color + " " + numSides+"-sided dice is showing " + getCurrentSide();
 	}
 
 	/**
@@ -98,7 +98,7 @@ public class Dice {
 	 * @return int
 	 */
 	public int roll() {
-		int currentSide = new Random().nextInt(this.numSides);
+		int currentSide = new Random().nextInt(this.numSides)+1;
 		return currentSide;
 	}
 

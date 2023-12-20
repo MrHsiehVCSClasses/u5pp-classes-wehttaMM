@@ -62,20 +62,27 @@ public class MyMath {
 	 * @return
 	 */
 	public static int perfectSqrt(int x) {
+		if(x == 0){
+			return 0;
+		}
 		int sqr  = x;
 		int y = 1;
 		if (x > 4) {
 			sqr = x/2;
 		}
 		while (y < sqr){
-			if (x / y == y) { 
-				return y;
+			if(x%y == 0){
+				if (x / y == y) {
+					return y;
+				}
+
 			}
 			y++;
 		}
-		
+
+
 		return -1;
-		
+
 	}
 	
 }

@@ -124,8 +124,9 @@ public class DiceTests {
         Dice diceToRoll = new Dice(100);
 
         for (int i = 0; i < rollsAndSides.length; i++) {
-            rollsAndSides[i][ROLL] = diceToRoll.roll();
-            rollsAndSides[i][SIDE] = diceToRoll.getCurrentSide();
+            int roll = diceToRoll.roll();
+            rollsAndSides[i][ROLL] = roll;
+            rollsAndSides[i][SIDE] = roll;
         }
 
         // "Dice rolls are between 1 and numSides, returns and updates the new
